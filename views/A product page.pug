@@ -1,0 +1,72 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title A product page
+    link(rel='stylesheet', href='week5_Tweety.css')
+  body
+    .bar
+      a(href='連去優惠頁面') 優惠折扣到5月底!~結帳就享88折~!
+    // 以下是header
+    .header.clearfix
+      h1
+        a(href='@@', target='_blank', title='回首頁') 找好東西電商平台
+      ul
+        li
+          a(href='@@', target='_blank') 首頁
+        li
+          a(href='@@', target='_blank') 產品分類
+        li
+          a(href='@@', target='_blank') 最新優惠
+        li
+          a(href='@@', target='_blank') 會員中心
+    // 以下是meun
+    .meun.clearfix
+      ul
+        li
+          a(href='@@', target='_blank') TOP 100
+        li
+          a(href='@@', target='_blank') 居家用品
+        li
+          a(href='@@', target='_blank') 電子產品
+        li
+          a(href='@@', target='_blank') 運動戶外
+        li
+          a(href='@@', target='_blank') 親子銀髮
+    // 以下是商品介紹圖
+    .wrap
+      .product
+        img(src='https://cdn.shopify.com/s/files/1/0254/0393/products/800_1024x1024_1e02b89c-318e-4eea-9468-85d8767ae53b_1500x.jpg?v=1480560785')
+        .productInfo
+          h1 Water Vacuum 「吸塵器」鞋子專屬除濕小物 - 灰
+          p $1,080 NTD (免運費)
+          p 3 期 0 利率 每期 $360 NTD
+          .buy
+            select#number(name='number')
+              option(value='number', selected='') 數量
+              option(value='number') 1
+              option(value='number') 2
+              option(value='number') 3
+            button 購買
+    // 以下是詳細商品介紹
+    .detail
+      h2 產品特色
+      ul
+        li 外型簡約美觀
+        li 可為受潮的鞋子除濕、以及除臭，並避免鞋子發霉
+        li 適用於球鞋、靴子等，多種鞋款
+        li 可重複使用、環保又不浪費
+      h2 產品介紹
+      p
+        | 「吸塵器」鞋子專屬除濕小物Water Vacuum，適合用於多種鞋款，任何淋濕過、或運動過後的鞋子皆可。外型討喜、時尚美觀，Water Vacuum放入鞋內，輕鬆吸入濕氣，保持乾燥。不但可為受潮的鞋子除濕又除臭，還可避免發霉。用吹風機3分鐘、或於陽光下曝曬1
+        | – 2天，便可立即再度使用，實用、環保又不浪費！
+      .detailImg
+        img(src='https://cdn2.citiesocial.com/citiesocial/image/fetch/w_500,c_thumb,q_100/https://citiesocial.s3.amazonaws.com/apps/products/product_description_images/20161129/1480391879/0012.jpg', alt='')
+        img(src='https://cdn2.citiesocial.com/citiesocial/image/fetch/w_500,c_thumb,q_100/https://citiesocial.s3.amazonaws.com/apps/products/product_description_images/20161129/1480400012/0011.jpg', alt='')
+        img(src='https://cdn2.citiesocial.com/citiesocial/image/fetch/w_500,c_thumb,q_100/https://citiesocial.s3.amazonaws.com/apps/products/product_description_images/20161129/1480391971/0018.jpg', alt='')
+    // 以下是footer
+    footer
+      .edm
+        input(type='text', placeholder='輸入信箱，即可收到最新優惠')
+        button(value='submit') 訂閱電子報
