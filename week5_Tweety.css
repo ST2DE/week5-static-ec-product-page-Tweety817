@@ -1,0 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: Microsoft JhengHei; 
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+/* CSS reset end */
+.bar{
+    background-color: #f4847e;
+    font-size: 14px;
+    padding: 3px;
+    text-align: center;
+}
+.bar a{
+    text-decoration: none;
+    color: white;
+}
+/*以下是meun*/
+.meun{
+    border-top: lightgray 1px solid;
+    border-bottom: lightgray 1px solid;
+}
+.meun ul{
+    padding: 10px;
+    display: flex;
+    justify-content:center;
+}
+.meun ul li{
+    font-size: 20px;
+    margin: 20px;
+}
+.meun ul li a{
+    text-decoration: none;
+    color: gray;
+}
+.meun ul li a:hover{
+    text-decoration: none;
+    color: #00c795;
+}
+@media (max-width: 768px){
+    .meun{
+        display:none;
+    }
+}
+/*以下是header*/
+
+.header h1 a{
+    margin-top: 3px;
+	width: 300px;
+	height: 50px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0254/0393/t/5/assets/logo-retina.png?3832887649484415812);
+    background-repeat: no-repeat;
+    background-size:cover;
+	text-indent:101%;
+    overflow: hidden;
+	white-space: nowrap;
+	float: left;	
+}
+.header ul{
+	float: right;
+}
+.header ul li{
+	float: left;
+	margin-right: 20px;
+}
+.header ul li a{
+	display: block;
+	padding: 18px 10px;
+	margin: 0 5px;
+	color: #f4847e;	
+	text-decoration: none;
+	font-size: 24px;
+}
+.header ul li a:hover{
+	border-bottom: 3px  #f4847e solid;
+}
+
+@media (max-width: 768px){
+	.header h1 a{
+        width: 100%;    
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size:cover;
+        margin-bottom: 2px;
+	}
+	.header ul{
+        width: 100%;
+	}
+
+	.header ul li{
+		width: 50%;
+    	margin: 3px 0px;  
+    	text-align: center;
+	}
+	.header ul li a{
+		float: none;
+        text-align: center;
+        padding: 10px;
+		
+	}
+	.header ul li a:hover{
+		border: none;
+		background-color: #f4847e;
+		color: #fff;
+	}
+}
+/* 以下是商品 */
+.wrap{
+    margin: 0 auto;
+    margin-top: 10px;
+	max-width: 1000px;
+	
+}
+.clearfix:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+.product{
+    display: flex;
+}
+.product img{
+    width: 330px;
+    height: 330px;
+    margin: 50px;
+    justify-content:space-between;
+}
+.productInfo{
+    margin-top: 50px;
+    width: 600px;
+    height: 300px;
+    justify-content:space-between;
+    display: flex;
+    flex-direction: column;
+}
+.productInfo h1{
+    font-size: 28px;
+    color: #000;
+    align-content: center;
+    
+}
+.productInfo p{
+    font-size: 24px;
+    color: #00c795;
+    margin: 30px;
+    align-content: center;
+      
+}
+.buy{
+    display: flex;
+    justify-content: center;
+}
+
+.productInfo select{
+    margin-top: 10px;
+    width: 70px;
+    height: 50px;
+    font-size: 24px;
+    color: grey;
+    margin-left: 50px;
+    justify-content: space-between;   
+}
+.productInfo button{
+    margin-top: 10px;
+    background: #00c795;
+    padding: 10px 50px;
+    color:white;
+    font-weight:bolder;
+    letter-spacing: 3px;
+    font-size: 20px;
+    justify-content: space-between;
+    margin-left: 100px;   
+}
+@media (max-width: 768px){
+    .product{
+    display: flex;
+    flex-direction:column; 
+    }
+    .product img{
+    width: 440px;
+    height: 440px;
+    margin: 0 auto;
+    }
+    .productInfo{
+    display: block;
+    margin: 0 auto;
+    width: 570px;
+    height: 270px;
+    margin: 30px;
+    text-align: center;
+}
+}
+.detail{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.detail h2{
+    color: #000;
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bolder;
+}
+.detail ul{
+    margin-left:15px;
+}
+.detail ul li{
+    list-style:disc;
+    margin: 5px 30px;
+    line-height: 30px;
+    font-size: 20px;
+    color: gray;
+}
+.detail p{
+    color: gray;
+     margin: 10px 15px;
+     line-height: 30px;
+     font-size: 20px;
+}
+.detailImg{
+    width: 500px;
+    margin: 10 auto;
+    
+}
+.detailImg img{
+   margin: 10px;
+}
+footer{
+    background-color: lightgray;
+    height: 300px;
+    text-align: center;
+    width: 100%;
+}
+footer .edm{
+    margin: 0px auto;
+}
+footer .edm input{
+    margin-top: 50px;
+    height: 50px;
+    width: 500px;
+    font-size: 24px;
+}
+footer .edm button{
+    margin: 20px 50px;
+    padding: 10px;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+}
+
